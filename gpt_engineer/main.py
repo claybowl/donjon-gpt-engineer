@@ -1,5 +1,6 @@
 import json
 import logging
+import openai
 
 
 from pathlib import Path
@@ -14,6 +15,7 @@ from gpt_engineer.steps import STEPS, Config as StepsConfig
 
 app = typer.Typer()
 
+'openai.api_key = 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'
 
 @app.command()
 def main(
